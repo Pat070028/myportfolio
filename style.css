@@ -1,742 +1,233 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
- 
+body{
 
- 
-
-.main-container{
-    position: relative;
-    background-image: linear-gradient(to bottom,black,black,gray);
-  
-    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-
-.gradient{
-    height: 100%;
+.main-container{
     width: 100%;
     background-color: black;
-    opacity: 50%;
-    position: absolute;
+    background-image: linear-gradient(to left,#0000,#061418);
+    height: 90vh;
+   
 }
-.main-container img{
-    position: relative;
-    top:1px;
-    width:50%;
+
+.main-container .section{
+
+    color: #CCD0CF;
+    opacity: 80%;
+    padding-top: 10%;
+    padding-left: 10%;
+
+  
+}
+
+.main-container .btn{
+
+    padding-top: 10%;
+    padding-left: 2%;
+
+}
+
+.main-container .btn button{
+
+    width: 15%;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    background-color: #4A5C6A;
+    color: #06141B;
+    transition: all 0.2s ease;
+}
+
+.main-container .btn button:active{
+
+    background-color: #253745;
+    color: #9BABAB;
+    transform: scale(0.96);
+
+
+}
+.main-container .section{
+
+    line-height: 70px;
+  
+}
+
+.main-container .section section h1{
+
+   font-size: 440%;
+   font-weight: lighter;
+   color: #9BABAB;
+}
+.main-container .section section .surname{
+
+    font-weight: 800;
+    color: #253745;
+ }
+
+ .main-container .section section .art-style{
+
+    font-size: 50%;
+    padding-left: 2%;
+    color: #CCD0CF;
     
+ }
 
+ .main-container .img{
 
-
-}
-.section{
     float: right;
-    margin-right: 130px;
-    margin-top:50px;
-    color: rgb(224, 220, 220);
-    border-top: 1px solid white;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
+    position: relative;
+    bottom: 82%;
+
+    
+ }
+ .main-container .img img{
+ 
+    width: 85%;
     opacity: 70%;
    
-}
-.section h4{
-    padding-bottom: 100px;
-    line-height: 10px;
-    padding-top: 50px;
-    padding-left:35px;
-    position: relative;
-    
-    
-}
-.section >h1{
-    font-size: 90px;
-    line-height: 100px;
-    margin-right: 70px;
-    padding-left: 35px;
-    position: relative;
-}
+ }
 
-.section .btn{
-    margin-bottom: 26vh;
-    margin-top: 25vh;
-    margin-left: 35px;
-    width: 30%;
-    font-size: 20px;
-    background-color:white;
-    border:none;
-    height: 30px;
-    border-radius: 50px;
-    transition: all 0.2s ease;
-    position: relative;
-   
-}
-.btn:hover{
-    background-color: black;
-    color: white;
-}
-.btn:active{
-    transform: scale(0.96);
-}
 
-.content{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 90px;
-    height: 100%;
-    
-    
-    
-}
-.content h3{
 
-    padding-top: 20vh;
-    padding-left: 80px;
-    font-size: 50px !important;
-    line-height: 50px;
-    
-    
-}
-.content p{
-    grid-column-start: 1;
-    font-size: 20px;
-    padding-left: 80px;
-    padding-top: 30px;
-    line-height: 30px;
-}
-.content img{
-    grid-column-start: 2;
-    width: 80%;
-    padding-left: 150px;
-    padding-top: 70px;
- 
-   
-}
-.padding{
 
-    margin-bottom: 100vh;
-}
 
-.bio{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-bottom: 80px;
-    background-color: rgb(32, 30, 30);
-    height: 100%;
  
 
-}
-
-.bio img{
-
-    width: 75%;
-    padding-left: 80px;
-    padding-top:22.7vh;
-  
-
-}
-.bio section{
-
-    padding-top: 115px;
-    padding-right: 100px;
-    color: rgb(218, 218, 218);
-    line-height: 25px;
-  
-}
- 
-.bio section .art-style{
-
-    padding-top: 10vh;
-}
-.about-self h5{
-     
-    line-height: 50px;
-    font-size: 20px;
-}
-
-.art-style h5{
-     
-    font-size: 20px;
-    line-height: 50px;
-}
-
-.gallery-container{
-
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 50px;
-    padding-top: 30px;
-    margin-bottom: 150px;
-    
-    
-}
-
-.gallery-container h3{
-
-    padding-left: 20px;
-    line-height: 40px;
-}
-
-
-
-.gallery-container img{
-
-    width: 90%;
- 
-}
-
-.gallery-container button{
-
-    background-color: black;
-    color:white;
-    width: 30%;
-    height: 8%;
-    border-style: none;
-    border-radius: 20px;
-    margin-top: 20px;
-    transition: all 0.2s ease;
-}
-
-.gallery-container button:hover{
-
-    background-color: white;
-    border: 1px solid black;
-    color: black;
- 
-
-}
-
-.gallery-container button:active{
-
-    transform: scale(0.96);
-}
-
-.service{
-
-    padding-left:65px;
-    font-size: 50px;
-    
-}
-
-.contact-container{
-
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    background-color: rgb(32, 30, 30);
-    color:white;
-
-    padding-bottom: 50px;
-    
-}
-.contact-container>div{
-
-    padding-left: 100px;
-    padding-top: 60px;
-    
-  
-}
-
-.contact-container h3{
-
-    line-height: 80px;
-
-}
-.contact-container h4{
-
-    padding-top: 50px;
-
-
-}
-.contact-container p{
-
-    opacity: 80%;
-}
-
-.contact-container button{
-
-    margin-top: 50px;
-    width: 18%;
-    height: 5%;
-    border-style: none;
-    font-size: 15px;
-    border-radius: 20px;
-    transition: all 0.2s ease;
-    
-}
-
-.contact-container button:hover{
-
-    background-color: gray;
-    color: white;
-}
-
-.contact-container button:active{
-
-    transform: scale(0.96);
-}
-
-.contact-container img{
-
-    width: 90%;
-}
-
-
-
-
-
-
-@media only screen and (max-width:1440px)
-{
+ @media only screen and (max-width:768px)
+ {
 
     .main-container{
 
-        max-width: 1440px;
+        width: 100%;
     }
 
-    .bio img{
+    .main-container .img{
 
-        padding-top: 200px;
+       position: relative;
+       bottom: 50%;
+        
+    }
+    .main-container .img img{
+        width: 100%;
     }
 
-    .contact-container > div{
+    .main-container .btn button{
 
-        padding-bottom: 10px;
+        width: 20%;
+        height: 30px;
     }
-}
-@media only screen and (max-width:1024px)
-{
-    .main-container img{
-        max-width: 1024px;
-        padding-top: 19.3%;
-       
-    }
-    
    
-    .main-container img{
 
-        width: 400%;
        
+
+ }
+ @media only screen and (max-width:425px)
+ {
+    
+    .main-container{
+
+        width: 100%;
+    }
+
+  
+    .main-container .img{
+
+        position: relative;
+        bottom: 29%;
+  
+      
+         
+     }
+    .main-container .img img{
+
+        width: 90%;
+    }
+
+    .main-container .section section{
+
+        font-size: 70%;
+        line-height: 50px;
+       
+    }
+    .main-container .section section .art-style{
+
+        padding-left: 48%;
+        
+    }
+
+    .main-container .section section .surname{
+
+        padding-left: 10%;
     }
 
     .main-container .btn{
 
-        width: 40%;
+        padding-left: 65%;
+        padding-top: 30%;
     }
+    .main-container .btn button{
 
-    .content img{
-
-
-        width:100%;
-        position: relative;
-        right: 70px;
-        top:30px;
-      
-    }
-
-    .gallery-container{
-
-        padding-right: 20px;
+        width: 64%;
+        height: 25px;
+        
     }
  
 
+ }
+ @media only screen and (max-width:375px)
+ {
 
-    .bio {
+  .main-container{
 
-        grid-template-columns: 1fr 2fr;
-    }
-    .bio section{
+    width: 100%;
+  }
+  
+   .main-container .img{
+    width: 104%;
+    position: relative;
+    bottom: 9%;
+   }
+
+   .main-container .btn{
+
+    padding-top: 5%;
+    width: 110%;
+  
+   }
+   
+ }
+ @media only screen and (max-width:320px)
+ {
     
-        margin-bottom: 10px;
-        font-size: 80%;   
-        position: relative;
-        bottom:70px;
 
-
+    .main-container{
+  
+        width: 100%;
+    
+        
        
     }
-    .bio section .art-style{
-        padding-left: 30%;
-      
-        
-    }
-    .bio section .about-self{
-        padding-left: 30%;
-      
-    }
 
-  
-   
-    .bio img{
-        width: 150%;
+    .main-container .img{
         position: relative;
-        right: 50px;
-        bottom: 40px;
-        
+        bottom: 6%;
 
-        
     }
-    .contact-container > div{
+    .main-container .section section .art-style{
 
-        padding-bottom: 10px;
+        font-size: 40%;
     }
-
-    .contact-container img{
-
-        padding-top: 50px;
-        width: 120%;
-    }
-
-    
-  
 }
 
-    @media only screen and (max-width:768px){
 
-        .main-container{
+ 
 
-         
-            width: 120%;
-        
-        
-        }
 
-        .main-container img{
-         
-            position: relative;
-          
-
-            
-            
-        }
-        .main-container .btn{
-            width: 45%;
-           
-        }
-
-        .section{
-
-            font-size: 70%;
-          
-        }
-        .section h1{
-
-            font-size: 850%;
-            line-height: 90px;
-            padding-top: 10px;
-        }
-       
-        .content img{
-
-            width: 140%;
-            padding-top: 190px;
-            right: 80px;
-          
-        }
-
-        .bio{
-
-            background-color: rgb(32, 30, 30);
-            width: 120%;
-        }
-
-        .gallery-container{
-
-          display: block;
-         
-         
-        }
-
-        .gallery-container > div{
-    
-
-
-            padding-left: 205px;
-        }
-        .gallery-container img{
-
-            width: 90%;
-      
-        
-        }
-
-        .gallery-container button{
-
-            height: 25px;
-            font-size: 90px;
-            width: 20%;
-        }
-
-        .gallery-container h3{
-
-            text-align: center;
-            line-height: 80px;
-        }
-
-        .gallery-container button{
-            flex-basis: 15%;
-            font-size: 60%;
-        }
-
-
-
-
-        .contact-container{
-
-            background-color: rgb(32, 30, 30);
-            width: 120%;
-
-
-        }
-
-        .contact-container img{
-
-            padding-top: 90px;
-        }
-
-        .contact-container button{
-
-            width: 25%;
-            font-size: 90%;
-        }
-
-        
-    }
-
-    @media only screen and (max-width:425px){
-
-        .main-container{
-        
-            width: 250%;
-      
-        }
-
-        .main-container img{
-
-            width: 60%;
-        }
-        .section{
-
-           font-size: 90%;
-           width: 205;
-        }
-        
-        .section h1{
-
-            font-size: 500%;
-        }
-
-        .section .btn{
-
-            width: 40%;
-            font-size: 140%;
-        }
-
-        .content img{
-
-            width: 400%;
-            position: relative;
-            right: 20px;
-
-        }
-
-      .content section p{
-
-            font-size: 140%;
-        }
-
-        .bio{
-
-            width: 250%;
-            font-size: 130%;
-
-
-        }
-        .bio img{
-
-            position: relative;
-            bottom: 30px;
-        }
-
-        .gallery-container{
-
-            width: 200%;
-        }
-
-        .contact-container{
-
-            width: 250%;
-
-        }
-        
-
-    }
-
-    @media only screen and (max-width:375px){
-
-        .main-container{
-
-            width: 250%;
-
-        }
-
-        .main-container img{
-
-            width: 190%;
-        }
-
-        .section{
-
-            font-size: 80%;
-        }
-
-        .main-container .btn{
-
-            width: 60%;
-            font-size: 150%;
-            height: 40px;
-        }
-
-        .content img{
-
-            position: relative;
-            top: 40px;
-            right: 50px;
-        }
-
-        .bio img{
-
-            opacity: 0;
-         
-        }
-
-        .bio h5{
-            
-            position: relative;
-            right: 95%;
-            font-size: 190%;
-        }
-
-        .bio p{
-
-            position: relative;
-            right: 95%;
-            font-size: 120%;
-            line-height: 30px;
-        }
-
-        .gallery-container{
-
-            width: 250%;
-            padding-right: 50%;
-            font-size: 150%;
-           
-        }
-        .gallery-container button{
-
-            width: 40%;
-            font-size: 80%;
-            height: 40px;
-           
-        }
-
-    }
-    
-    @media only screen and (max-width:320px){
-
-        .main-container{
-
-            width: 300%;
-        }
-        .main-container .section{
-
-            font-size: 100%;
-        }
-
-        .main-container h1{
-
-            font-size: 500%;
-        }
-
-        .main-container .btn{
-
-            font-size: 150%;
-            width: 60%;
-        }
-
-        .content img{
-
-            position: relative;
-            right: 50px;
-        }
-
-        .bio{
-            width: 300%;
-            font-size: 150%;
-
-        
-        }
-
-        .gallery-container{
-
-            width: 300%;
-        }
-        .gallery-container p{
-
-            font-size: 150%;
-        }
-
-        .gallery-container h3{
-
-            font-size: 150%;
-        }
-
-        .gallery-container button{
-
-            width: 30%;
-            height: 40px;
-            font-size: 100%;
-        }
-
-        .contact-container{
-           
-            width: 300%;
-        }
-
-        .contact-container h3{
-            font-size: 180%;
-
-        }
-
-        .contact-container h4{
-
-            line-height: 50px;
-            font-size: 180%;
-        }
-
-        .contact-container p{
-
-            font-size: 130%;
-            line-height: 30px;
-        }
-        .contact-container button{
-
-            width: 40%;
-            font-size: 150%;
-            height: 40px;
-        }
-
-       
-
-        
-    }
-    
-
-
-
-  
 
 
 
